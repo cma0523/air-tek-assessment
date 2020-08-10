@@ -77,6 +77,7 @@ namespace FlightService.Services
 
         private IEnumerable<Order> RetriveOrders()
         {   
+            //for console app usage only 
             var dataFilePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.Parent?.FullName + "\\FlightService\\Data\\coding-assigment-orders.json";
 
             var jsonString = File.ReadAllText(dataFilePath);
